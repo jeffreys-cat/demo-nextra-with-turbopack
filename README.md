@@ -1,7 +1,3 @@
-# SelectDB Website V3
-
-The website v3 of selectdb
-
 ## What's inside?
 
 uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
