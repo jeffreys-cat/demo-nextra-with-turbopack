@@ -1,0 +1,34 @@
+{
+  "name": "selectdb-website3",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "build:docs": "turbo run build --filter=docs...",
+    "build:web": "turbo run build --filter=web...",
+    "clean": "turbo run clean",
+    "dev": "turbo run dev",
+    "dev:docs": "turbo run dev --filter=docs...",
+    "dev:web": "turbo run dev --filter=web...",
+    "dev:api": "turbo run dev --filter=api...",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "docker:build": "COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose --project-name selectdb_website3 -f docker-compose.yml build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "packageManager": "yarn@1.22.17",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
+  }
+}
